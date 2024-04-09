@@ -3,40 +3,40 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-const Card = () => {
+const CardEight = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [copiedHTML, setCopiedHTML] = useState(false);
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-    <div class="bg-gray-200 py-10 flex justify-center">
-      <div class="flex flex-col bg-white shadow-xl rounded w-96">
-        <img src="https://i.ibb.co/f2DnPgd/img1.png" width={500} height={500} alt="Picture of the author" />
-        <div class="p-5">
-          <h2 class="text-start font-bold text-xl">Shoes!</h2>
-          <p class="text-left my-3">If a dog chews shoes whose shoes does he choose?</p>
-          <div class="flex justify-end">
-            <button class="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">Buy Now</button>
-          </div>
-        </div>
-      </div>
+  <div class="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+    <h2 class="font-bold text-xl">Cookies!</h2>
+    <p class="my-5">We are using cookies for no reason.</p>
+    <div class="flex justify-center gap-5">
+        <button class="px-3 py-2 bg-white text-black font-bold rounded mr-2">
+        Accept
+        </button>
+        <button class="px-3 py-2 border text-white font-bold rounded bg-transparent">
+        Deny
+        </button>
     </div>
-  `;
+</div>
+ `;
 
   const cardJSX = `
-    <div className="bg-gray-200 py-10 flex justify-center">
-      <div className="flex flex-col bg-white shadow-xl rounded w-96">
-        <img src="https://i.ibb.co/f2DnPgd/img1.png" width={500} height={500} alt="Picture of the author" />
-        <div className="p-5">
-          <h2 className="text-start font-bold text-xl">Shoes!</h2>
-          <p className="text-left my-3">If a dog chews shoes whose shoes does he choose?</p>
-          <div className="flex justify-end">
-            <button className="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">Buy Now</button>
-          </div>
-        </div>
-      </div>
+  <div className="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+    <h2 className="font-bold text-xl">Cookies!</h2>
+    <p className="my-5">We are using cookies for no reason.</p>
+    <div className="flex justify-center gap-5">
+        <button className="px-3 py-2 bg-white text-black font-bold rounded mr-2">
+        Accept
+        </button>
+        <button className="px-3 py-2 border text-white font-bold rounded bg-transparent">
+        Deny
+        </button>
     </div>
-  `;
+</div>
+      `;
 
   const handleCopyHTML = () => {
     setCopiedHTML(true);
@@ -50,10 +50,10 @@ const Card = () => {
 
   return (
     <div>
-      {/* Card Styles 2 */}
+      {/* Card Styles 1 */}
       <main>
         <div className="overflow-hidden rounded-xl border border-gray-100 bg-gray-50 p-1">
-          {/* Tab */}
+          {/* Tab 1*/}
           <ul className="flex items-center gap-2 text-sm font-medium justify-center">
             <li>
               <a
@@ -95,24 +95,17 @@ const Card = () => {
         </div>
         <div className="py-3 relative">
           {activeTab === 0 && (
-            <div className="bg-[#F9FAFB] py-10 justify-center flex">
-              <div className="flex flex-col bg-white shadow-xl rounded w-96">
-                <img
-                  src="https://i.ibb.co/f2DnPgd/img1.png"
-                  width={500}
-                  height={500}
-                  alt="Picture of the author"
-                />
-                <div className="p-5">
-                  <h2 className="text-start font-bold text-xl">Shoes!</h2>
-                  <p className="text-left my-3">
-                    If a dog chews shoes whose shoes does he choose?
-                  </p>
-                  <div className="flex justify-end">
-                    <button className="text-end px-5 text-base py-3 bg-orange-400 text-white font-bold rounded">
-                      Buy Now
-                    </button>
-                  </div>
+            <div className="flex justify-center bg-[#F9FAFB] py-10">
+              <div className="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+                <h2 className="font-bold text-xl">Cookies!</h2>
+                <p className="my-5">We are using cookies for no reason.</p>
+                <div className="flex justify-center gap-5">
+                  <button className="px-3 py-2 bg-white text-black font-bold rounded mr-2">
+                    Accept
+                  </button>
+                  <button className="px-3 py-2 border text-white font-bold rounded bg-transparent">
+                    Deny
+                  </button>
                 </div>
               </div>
             </div>
@@ -150,11 +143,8 @@ const Card = () => {
           </div>
         </div>
       </main>
-
-      {/* Card Styles 2 */}
-      
     </div>
   );
 };
 
-export default Card;
+export default CardEight;
