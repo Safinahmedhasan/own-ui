@@ -1,16 +1,13 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
-import { GrLogout } from "react-icons/gr";
-import { FcSettings } from "react-icons/fc";
 import { AiOutlineBars } from "react-icons/ai";
 const Sidebar = () => {
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
   const [isActive, setActive] = useState("false");
-  const toggleHandler = (event) => {
-    setToggle(event.target.checked);
-  };
+  // const toggleHandler = (event) => {
+  //   setToggle(event.target.checked);
+  // };
   // Sidebar Responsive Handler
   const handleToggle = () => {
     setActive(!isActive);
@@ -23,12 +20,14 @@ const Sidebar = () => {
         <div>
           <div className="block cursor-pointer p-4 font-bold">
             {/* <Logo /> */}
-            <h2>
-              <span className="text-black font-bold text-2xl">Own</span>{" "}
-              <span className="text-white bg-orange-400 text-2xl font-bold px-2">
-                UI
-              </span>
-            </h2>
+            <Link to="/">
+              <h2>
+                <span className="text-black font-bold text-3xl">Own</span>{" "}
+                <span className="text-white bg-orange-400 text-2xl font-bold px-2">
+                  UI
+                </span>
+              </h2>
+            </Link>
           </div>
         </div>
 

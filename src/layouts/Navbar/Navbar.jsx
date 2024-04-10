@@ -1,15 +1,19 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div>
       <div className="shadow-lg py-5 fixed w-full top-0 z-50 bg-white md:block hidden">
         <div className="flex justify-between items-center container mx-auto">
           <div>
-            <h2>
-              <span className="text-black font-bold text-3xl">Own</span>{" "}
-              <span className="text-white bg-orange-400 text-2xl font-bold px-2">
-                UI
-              </span>
-            </h2>
+            <Link to="/">
+              <h2>
+                <span className="text-black font-bold text-3xl">Own</span>{" "}
+                <span className="text-white bg-orange-400 text-2xl font-bold px-2">
+                  UI
+                </span>
+              </h2>
+            </Link>
           </div>
           <div className="flex justify-center items-center gap-5">
             <p className="cursor-pointer hover:text-orange-400">Documents</p>
@@ -38,12 +42,14 @@ const Navbar = () => {
       <div className="shadow-lg py-5 fixed w-full top-0 z-50 bg-white block md:hidden px-5">
         <div className="flex justify-between items-center container mx-auto">
           <div>
-            <h2>
-              <span className="text-black font-bold text-3xl">Own</span>{" "}
-              <span className="text-white bg-orange-400 text-2xl font-bold px-2">
-                UI
-              </span>
-            </h2>
+            <Link to="/">
+              <h2>
+                <span className="text-black font-bold text-3xl">Own</span>{" "}
+                <span className="text-white bg-orange-400 text-2xl font-bold px-2">
+                  UI
+                </span>
+              </h2>
+            </Link>
           </div>
           <div className="flex justify-center items-center space-x-5">
             <div>
