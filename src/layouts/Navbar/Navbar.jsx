@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center container mx-auto">
           <div>
             <h2>
-              <span className="text-black font-bold text-2xl">Own</span>{" "}
+              <span className="text-black font-bold text-3xl">Own</span>{" "}
               <span className="text-white bg-orange-400 text-2xl font-bold px-2">
                 UI
               </span>
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center container mx-auto">
           <div>
             <h2>
-              <span className="text-black font-bold text-2xl">Own</span>{" "}
+              <span className="text-black font-bold text-3xl">Own</span>{" "}
               <span className="text-white bg-orange-400 text-2xl font-bold px-2">
                 UI
               </span>

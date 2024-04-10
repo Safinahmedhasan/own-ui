@@ -23,6 +23,12 @@ const Sidebar = () => {
         <div>
           <div className="block cursor-pointer p-4 font-bold">
             {/* <Logo /> */}
+            <h2>
+              <span className="text-black font-bold text-2xl">Own</span>{" "}
+              <span className="text-white bg-orange-400 text-2xl font-bold px-2">
+                UI
+              </span>
+            </h2>
           </div>
         </div>
 
@@ -35,15 +41,23 @@ const Sidebar = () => {
       </div>
       {/* Sidebar */}
       <div
-        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-gray-100 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
+        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-[#F9FAFB] shadow-xl w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
           isActive && "-translate-x-full"
         }  md:translate-x-0  transition duration-200 ease-in-out`}
       >
         <div>
           {/* Branding & Profile Info */}
           <div>
-            <div className="w-full hidden md:flex py-2 justify-center items-center bg-rose-100 mx-auto">
+            <div className="w-full hidden md:flex py-2 justify-center items-center bg-[#F9FAFB] mx-auto">
               {/* <Logo /> */}
+              <Link to="/">
+                <h2>
+                  <span className="text-black font-bold text-3xl">Own</span>{" "}
+                  <span className="text-white bg-orange-400 text-2xl font-bold px-2">
+                    UI
+                  </span>
+                </h2>
+              </Link>
             </div>
             <div className="flex flex-col items-center mt-6 -mx-2">
               <Link to="/dashboard">
@@ -70,34 +84,41 @@ const Sidebar = () => {
           {/* Nav Items */}
           <div className="flex flex-col justify-between flex-1 mt-6">
             <nav>
-              <>
-                {/* Button */}
-                <NavLink
-                  to="dashboard/button"
-                  className={({ isActive }) =>
-                    `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-orange-500   hover:text-gray-700 ${
-                      isActive ? "bg-orange-400  text-white" : "text-gray-600"
-                    }`
-                  }
-                >
-                  {/* <BsFillHouseAddFill className='w-5 h-5' /> */}
+              {/* Button */}
+              <NavLink
+                to="dashboard/button"
+                className={({ isActive }) =>
+                  `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-orange-500   hover:text-gray-700 ${
+                    isActive ? "bg-orange-400  text-white" : "text-gray-600"
+                  }`
+                }
+              >
+                <span className="mx-4 font-medium">Button</span>
+              </NavLink>
 
-                  <span className="mx-4 font-medium">Button</span>
-                </NavLink>
-                {/* Card */}
-                <NavLink
-                  to="dashboard/Card"
-                  className={({ isActive }) =>
-                    `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${
-                      isActive ? "bg-gray-300  text-gray-700" : "text-gray-600"
-                    }`
-                  }
-                >
-                  {/* <BsFillHouseAddFill className='w-5 h-5' /> */}
+              {/* Card */}
+              <NavLink
+                to="dashboard/Card"
+                className={({ isActive }) =>
+                  `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-orange-500   hover:text-gray-700 ${
+                    isActive ? "bg-orange-400  text-white" : "text-gray-600"
+                  }`
+                }
+              >
+                <span className="mx-4 font-medium">Card</span>
+              </NavLink>
 
-                  <span className="mx-4 font-medium">Card</span>
-                </NavLink>
-              </>
+              {/* Card */}
+              <NavLink
+                to="dashboard/Tab"
+                className={({ isActive }) =>
+                  `flex items-center px-4 py-2 mt-5  transition-colors duration-300 transform  hover:bg-orange-500   hover:text-gray-700 ${
+                    isActive ? "bg-orange-400  text-white" : "text-gray-600"
+                  }`
+                }
+              >
+                <span className="mx-4 font-medium">Tab</span>
+              </NavLink>
             </nav>
           </div>
         </div>
