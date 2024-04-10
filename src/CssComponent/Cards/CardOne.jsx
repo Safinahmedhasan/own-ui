@@ -9,26 +9,26 @@ const CardOne = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-      <div class="flex flex-col bg-white shadow-xl rounded w-96">
+      <div class="flex flex-col bg-white shadow-xl rounded-xl w-96">
         <img src="https://i.ibb.co/f2DnPgd/img1.png" width={500} height={500} alt="Picture of the author" />
         <div class="p-5">
           <h2 class="text-start font-bold text-xl">Shoes!</h2>
           <p class="text-left my-3">If a dog chews shoes whose shoes does he choose?</p>
           <div class="flex justify-end">
-            <button class="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">Buy Now</button>
+            <button class="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded-xl">Buy Now</button>
           </div>
         </div>
       </div>
   `;
 
   const cardJSX = `
-      <div className="flex flex-col bg-white shadow-xl rounded w-96">
+      <div className="flex flex-col bg-white shadow-xl rounded-xl w-96">
         <img src="https://i.ibb.co/f2DnPgd/img1.png" width={500} height={500} alt="Picture of the author" />
         <div className="p-5">
           <h2 className="text-start font-bold text-xl">Shoes!</h2>
           <p className="text-left my-3">If a dog chews shoes whose shoes does he choose?</p>
           <div className="flex justify-end">
-            <button className="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">Buy Now</button>
+            <button className="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded-xl">Buy Now</button>
           </div>
         </div>
       </div>
@@ -56,8 +56,8 @@ const CardOne = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white"
                 }`}
               >
                 Preview
@@ -68,8 +68,8 @@ const CardOne = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -80,8 +80,8 @@ const CardOne = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -92,7 +92,7 @@ const CardOne = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className="bg-[#F9FAFB] py-10 justify-center flex">
-              <div className="flex flex-col bg-white shadow-xl rounded w-96">
+              <div className="flex flex-col bg-white shadow-xl rounded-xl w-96">
                 <img
                   src="https://i.ibb.co/f2DnPgd/img1.png"
                   width={500}
@@ -105,7 +105,7 @@ const CardOne = () => {
                     If a dog chews shoes whose shoes does he choose?
                   </p>
                   <div className="flex justify-end">
-                    <button className="text-end px-5 text-base py-3 bg-orange-400 text-white font-bold rounded">
+                    <button className="text-end px-5 text-base py-3 bg-orange-400 text-white font-bold rounded-xl">
                       Buy Now
                     </button>
                   </div>

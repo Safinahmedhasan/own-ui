@@ -9,13 +9,13 @@ const CardSix = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-  <div class="bg-white shadow-xl rounded w-96 p-5">
+  <div class="bg-white shadow-xl rounded-xl w-96 p-5">
     <h2 class="font-bold text-xl">Card title!</h2>
     <p class="my-3">
         If a dog chews shoes whose shoes does he choose?
     </p>
     <div class="flex justify-end">
-        <button class="px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button class="px-5 py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
         Buy Now
         </button>
     </div>
@@ -23,13 +23,13 @@ const CardSix = () => {
  `;
 
   const cardJSX = `
-  <div className="bg-white shadow-xl rounded w-96 p-5">
+  <div className="bg-white shadow-xl rounded-xl w-96 p-5">
     <h2 className="font-bold text-xl">Card title!</h2>
     <p className="my-3">
         If a dog chews shoes whose shoes does he choose?
     </p>
     <div className="flex justify-end">
-        <button className="px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button className="px-5 py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
         Buy Now
         </button>
     </div>
@@ -58,8 +58,8 @@ const CardSix = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 Preview
@@ -70,8 +70,8 @@ const CardSix = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -82,8 +82,8 @@ const CardSix = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -94,13 +94,13 @@ const CardSix = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className="flex justify-center bg-[#F9FAFB] py-10">
-              <div className="bg-white shadow-xl rounded w-96 p-5">
+              <div className="bg-white shadow-xl rounded-xl w-96 p-5">
                 <h2 className="font-bold text-xl">Card title!</h2>
                 <p className="my-3">
                   If a dog chews shoes whose shoes does he choose?
                 </p>
                 <div className="flex justify-end">
-                  <button className="px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
+                  <button className="px-5 py-3 bg-orange-400 text-white font-bold rounded-xl">
                     Buy Now
                   </button>
                 </div>

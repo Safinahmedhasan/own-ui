@@ -9,7 +9,7 @@ const CardTwo = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-  <div class=" flex flex-col bg-white shadow-xl rounded w-96 ">
+  <div class=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
     <img src="https://i.ibb.co/f2DnPgd/img1.png" alt="Shoe Price" />
     <div class="p-5">
       <h2 class="text-center font-bold text-xl ">Shoes!</h2>
@@ -17,7 +17,7 @@ const CardTwo = () => {
         If a dog chews shoes whose shoes does he choose?
       </p>
       <div class="flex justify-center ">
-        <button class="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button class="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
           Buy Now
         </button>
       </div>
@@ -26,7 +26,7 @@ const CardTwo = () => {
 `;
 
   const cardJSX = `
-  <div className=" flex flex-col bg-white shadow-xl rounded w-96 ">
+  <div className=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
     <img
       src="https://i.ibb.co/f2DnPgd/img1.png"
       width={500}
@@ -39,7 +39,7 @@ const CardTwo = () => {
         If a dog chews shoes whose shoes does he choose?
       </p>
       <div className="flex justify-center ">
-        <button className="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button className="text-end px-5 text-base py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
           Buy Now
         </button>
       </div>
@@ -69,8 +69,8 @@ const CardTwo = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 Preview
@@ -81,8 +81,8 @@ const CardTwo = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -93,8 +93,8 @@ const CardTwo = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -105,7 +105,7 @@ const CardTwo = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className=" bg-[#F9FAFB] py-10 flex justify-center">
-              <div className=" flex flex-col bg-white shadow-xl rounded w-96 ">
+              <div className=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
                 <img
                   src="https://i.ibb.co/f2DnPgd/img1.png"
                   width={500}
@@ -118,7 +118,7 @@ const CardTwo = () => {
                     If a dog chews shoes whose shoes does he choose?
                   </p>
                   <div className="flex justify-center ">
-                    <button className="text-end px-5 text-base py-3 bg-orange-400 text-white font-bold rounded">
+                    <button className="text-end px-5 text-base py-3 bg-orange-400 text-white font-bold rounded-xl">
                       Buy Now
                     </button>
                   </div>

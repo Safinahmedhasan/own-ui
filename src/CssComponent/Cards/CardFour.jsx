@@ -9,7 +9,7 @@ const CardFour = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-  <div class=" flex flex-col bg-white shadow-xl rounded w-96 ">
+  <div class=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
     <div class="p-5 gap-5">
         <h2 class="text-center font-bold text-xl ">Shoes!</h2>
         <p class="text-center my-3">
@@ -21,7 +21,7 @@ const CardFour = () => {
  `;
 
   const cardJSX = `
-         <div className=" flex flex-col bg-white shadow-xl rounded w-96 ">
+         <div className=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
             <div className="p-5 gap-5">
               <h2 className="text-center font-bold text-xl ">Shoes!</h2>
               <p className="text-center my-3">
@@ -59,8 +59,8 @@ const CardFour = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 Preview
@@ -71,8 +71,8 @@ const CardFour = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -83,8 +83,8 @@ const CardFour = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -95,7 +95,7 @@ const CardFour = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className="flex justify-center bg-[#F9FAFB] py-10">
-              <div className=" flex flex-col bg-white shadow-xl rounded w-96 ">
+              <div className=" flex flex-col bg-white shadow-xl rounded-xl w-96 ">
                 <div className="p-5 gap-5">
                   <h2 className="text-center font-bold text-xl ">Shoes!</h2>
                   <p className="text-center my-3">

@@ -113,7 +113,7 @@ const ButtonOne = () => {
         </div>
         <div className="py-3 relative">
           {activeTab === 0 && (
-            <div className="flex justify-center items-center py-10 gap-12">
+            <div className="flex container mx-auto justify-center items-center py-10 gap-12">
               <button className="px-5 py-3 bg-[#D2D4D7] text-black font-bold rounded">
                 Ghost
               </button>

@@ -9,7 +9,7 @@ const CardEight = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-  <div class="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+  <div class="bg-[#2B3440] shadow-xl rounded-xl text-center py-10 w-96 text-white">
     <h2 class="font-bold text-xl">Cookies!</h2>
     <p class="my-5">We are using cookies for no reason.</p>
     <div class="flex justify-center gap-5">
@@ -24,7 +24,7 @@ const CardEight = () => {
  `;
 
   const cardJSX = `
-  <div className="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+  <div className="bg-[#2B3440] shadow-xl rounded-xl text-center py-10 w-96 text-white">
     <h2 className="font-bold text-xl">Cookies!</h2>
     <p className="my-5">We are using cookies for no reason.</p>
     <div className="flex justify-center gap-5">
@@ -60,8 +60,8 @@ const CardEight = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 Preview
@@ -72,8 +72,8 @@ const CardEight = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -84,8 +84,8 @@ const CardEight = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -96,7 +96,7 @@ const CardEight = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className="flex justify-center bg-[#F9FAFB] py-10">
-              <div className="bg-[#2B3440] shadow-xl rounded text-center py-10 w-96 text-white">
+              <div className="bg-[#2B3440] shadow-xl rounded-xl text-center py-10 w-96 text-white">
                 <h2 className="font-bold text-xl">Cookies!</h2>
                 <p className="my-5">We are using cookies for no reason.</p>
                 <div className="flex justify-center gap-5">

@@ -9,20 +9,20 @@ const CardFive = () => {
   const [copiedJSX, setCopiedJSX] = useState(false);
 
   const cardHTML = `
-  <div class="flex flex-col  shadow-xl rounded w-96 relative">
+  <div class="flex flex-col  shadow-xl rounded-xl w-96 relative">
     <img
         src="https://i.ibb.co/f2DnPgd/img1.png"
         alt="Shoe Price"
         class="w-full h-auto rounded-t"
     />
-    <div class="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded">
+    <div class="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded-xl">
         <div>
         <h2 class="text-start font-bold text-xl text-white">Shoes!</h2>
         <p class="text-left my-3 text-white">
             If a dog chews shoes whose shoes does he choose?
         </p>
         </div>
-        <button class=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button class=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
         Buy Now
         </button>
     </div>
@@ -30,14 +30,14 @@ const CardFive = () => {
  `;
 
   const cardJSX = `
-  <div className="flex flex-col  shadow-xl rounded w-96 relative">
+  <div className="flex flex-col  shadow-xl rounded-xl w-96 relative">
     <img
         src="https://i.ibb.co/f2DnPgd/img1.png"
         width={500}
         height={500}
         alt="Picture of the author"
     />
-    <div className="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded">
+    <div className="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded-xl">
         <div>
         <h2 className="text-start font-bold text-xl text-white">
             Shoes!
@@ -46,7 +46,7 @@ const CardFive = () => {
             If a dog chews shoes whose shoes does he choose?
         </p>
         </div>
-        <button className=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
+        <button className=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
         Buy Now
         </button>
     </div>
@@ -75,8 +75,8 @@ const CardFive = () => {
                 onClick={() => setActiveTab(0)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 0
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 Preview
@@ -87,8 +87,8 @@ const CardFive = () => {
                 onClick={() => setActiveTab(1)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 1
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 HTML
@@ -99,8 +99,8 @@ const CardFive = () => {
                 onClick={() => setActiveTab(2)}
                 className={`inline-flex cursor-pointer items-center gap-2 rounded-lg px-3 py-2 ${
                   activeTab === 2
-                    ? "bg-white shadow text-gray-700"
-                    : "hover:bg-white hover:text-gray-700 hover:shadow"
+                    ? "bg-orange-400 shadow text-white"
+                    : "hover:bg-orange-500 hover:text-white hover:shadow"
                 }`}
               >
                 JSX
@@ -111,28 +111,28 @@ const CardFive = () => {
         <div className="py-3 relative">
           {activeTab === 0 && (
             <div className="flex justify-center bg-[#F9FAFB] py-10">
-            <div className="flex flex-col  shadow-xl rounded w-96 relative">
-              <img
-                src="https://i.ibb.co/f2DnPgd/img1.png"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
-              <div className="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded">
-                <div>
-                  <h2 className="text-start font-bold text-xl text-white">
-                    Shoes!
-                  </h2>
-                  <p className="text-left my-3 text-white">
-                    If a dog chews shoes whose shoes does he choose?
-                  </p>
+              <div className="flex flex-col shadow-xl rounded-xl w-96 relative">
+                <img
+                  src="https://i.ibb.co/f2DnPgd/img1.png"
+                  width={500}
+                  height={500}
+                  alt="Picture of the author"
+                />
+                <div className="p-5 bg-black opacity-70 absolute inset-0 flex flex-col justify-end items-end rounded-xl">
+                  <div>
+                    <h2 className="text-start font-bold text-xl text-white">
+                      Shoes!
+                    </h2>
+                    <p className="text-left my-3 text-white">
+                      If a dog chews shoes whose shoes does he choose?
+                    </p>
+                  </div>
+                  <button className=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded-xl">
+                    Buy Now
+                  </button>
                 </div>
-                <button className=" z-50 text-end px-5 py-3 bg-[#4A00FF] text-white font-bold rounded">
-                  Buy Now
-                </button>
               </div>
             </div>
-          </div>
           )}
           {(activeTab === 1 || activeTab === 2) && (
             <div className="rounded-md overflow-hidden">
